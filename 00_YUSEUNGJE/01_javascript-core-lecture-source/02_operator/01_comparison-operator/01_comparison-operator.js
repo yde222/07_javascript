@@ -19,3 +19,18 @@ console.log(`0 === : ${0 === ''}`);
 // null과 undefined비교
 console.log(`null == undefined : ${null == undefined}`);
 console.log(`null === undefined : ${null === undefined}`);
+
+// NaN은 자신과 일치하지 않는 유일한 값이다.
+console.log(`NaN == NaN : ${NaN == NaN}`);
+console.log(`NaN === NaN : ${NaN === NaN}`);
+console.log(`Number.isNaN(NaN) : ${Number.isNaN(NaN)}` );
+
+// 비교연산자를 통해 문자열끼리 비교도 가능하며 유니코드 순으로 비교한다.
+
+// 일치비교 연산자
+console.log(`'hello' === 'hello' : ${'hello' === 'hello'}`);
+console.log(`'hello' !== 'hello' : ${'hello' !== 'hello'}`);
+
+// 크기비교 연산자
+console.log(`'apple' < 'banana' : ${'apple' < 'banana'}`);
+console.log(`'apple' > 'banana' : ${'apple' > 'banana'}`);
