@@ -12,7 +12,8 @@ function Student(name, age) {
   };
 
   // 3. 완성된 인스턴스가 바인딩 된 this가 암묵적으로 반환된다.
-  //return {};
+  //return {}; -> 명시적으로 객체를 반환하면 암묵적인 this 반환이 무시된다.
+  //return 1;  -> 명시적으로 원시 값을 return 구문이 무시되고 this가 반환된다.
 }
 
 const student1 = new Student("장보고", 45);
