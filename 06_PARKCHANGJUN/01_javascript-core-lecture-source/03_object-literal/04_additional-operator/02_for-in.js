@@ -11,4 +11,5 @@ for(var key in student) {
     console.log(`student.key : ${student.key}`);
     console.log(`================================`);
     console.log(`student[key] : ${student[key]}`);
+    
 };
