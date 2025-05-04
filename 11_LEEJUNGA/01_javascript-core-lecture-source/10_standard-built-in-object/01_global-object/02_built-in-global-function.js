@@ -49,7 +49,7 @@ console.log(parseInt("10")); // 10
 console.log(parseInt("10.01")); // 10
 
 console.log(parseInt("GS25")); // NaN
-console.log(parseInt("10cm"));
+console.log(parseInt("10cm")); // 10
 
 // encodeURI
 // URI(인터넷에 있는 자원을 나타내는 유일한 주소)를 문자열로 전달받아 이스케이프 처리를 위해 인코딩한다.

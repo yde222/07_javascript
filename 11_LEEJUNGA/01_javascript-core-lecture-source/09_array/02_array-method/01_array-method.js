@@ -81,7 +81,7 @@ console.log(`front.slice(1) : ${front.slice(1)}`);
 console.log(`front : ${front}`);
 
 // splice(index, 제거수, 추가값1, 추가값2,....)
-console.log(`front.splice(3, 1, "React") : ${front.splice(3, 1, "React")}`);
+console.log(`front.splice(2, 2, "React") : ${front.splice(2, 2, "React")}`);
 console.log(`front : ${front}`);
 
 // Array.prototype.join: 배열을 구분자로 결합하여 문자열로 반환

@@ -55,6 +55,8 @@ console.log(target.match(/[A-Za-z]+/g)); // [ 'aa', 'bb', 'cc', 'dd' ]
 // 숫자 범위
 console.log(target.match(/[0-9]+/g)); // [ '123', '456' ]
 
+console.log(">>>>>>>>>>>>>>");
+
 // \d : 숫자
 // \D : 숫자가 아닌 문자
 console.log(target.match(/\d+/g));

@@ -83,6 +83,7 @@ console.log(`result : ${result}`);
 
 const student = [
   { name: "유관순", score: 90 },
+  { name: "홍길동", score: 50 },
   { name: "홍길동", score: 80 },
   { name: "장보고", score: 70 },
 ];
