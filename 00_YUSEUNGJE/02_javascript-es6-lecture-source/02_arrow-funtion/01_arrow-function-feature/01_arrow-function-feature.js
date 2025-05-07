@@ -44,7 +44,33 @@ class Animal {
 
 class Tiger extends Animal {
   move(lostWeight) {
-    // 일반 함수
     // 화살표 함수
+    setTimeout(() => {
+      super.move(lostWeight);
+    }, 3000);
+    // 일반 함수 // SyntaxError: 'super' keyword unexpected here
+    // setTimeout(function () {
+    //   super.move(lostWeight);
+    // }, 3000);
   }
 }
+
+let tiger = new Tiger("백두산 호랭이", 90);
+tiger.move(1);
+
+// 4. 화살표 함수는 arguments를 가지지 않는다.
+(function () {
+  console.log(arguments);
+
+  // 화살표 함수는 본인의 arguments 3,4가 아닌 상위스코프의 arguments 1,2를 참조한다.
+  //const arrowFunc = () => console.log(arguments);
+
+  const arrowFunc = function () {
+    console.log("--->", arguments);
+  };
+  arrowFunc(3, 4);
+})(1, 2); // 즉시실행함수
+
+// 화살표 함수는 콜백 함수로 자주 사용되며, 자신의 this/arguments를 갖지 않고
+// 상위스코프를 그대로 참조하도록 설계되어 ES5 콜백 함수에서 자주 발생하던
+// this 바인딩 문제(전역 객체 or undefined를 가리킴)을 간편하게 해결 할 수 있다.
