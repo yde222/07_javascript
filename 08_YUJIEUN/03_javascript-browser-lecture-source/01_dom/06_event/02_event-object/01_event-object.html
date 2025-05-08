@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+    <body>
+        <h1>Event Object</h1>
+        <p>Click the button to see the event object in action. The event object will be logged to the console.</p>
+        <h1 class="massage">아무곳이나 클릭해보세요.</h1>
+        <script>
+           document.onclick = showCoords;
+
+           function showCoords(evt){
+            console.log(evt);
+            const $msg = document.querySelector("message");
+            $msg.textContent = `clientX: ${evt.clientX}, clientY: ${evt.clientY}`; 
+            
+           }
+        </script>
+    </body>    
+
+    
+</html>
